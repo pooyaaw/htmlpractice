@@ -4,9 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
+    <style>
+      /* ====== GLOBAL STYLES ====== */
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        color: #333;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* ====== NAV BAR ====== */
+      nav {
+        background: #3498db;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        padding: 8px 14px;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        font-weight: 500;
+      }
+
+      nav a:hover {
+        background: #217dbb;
+        transform: scale(1.05);
+      }
+
+      /* ====== CONTENT ====== */
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      main p {
+        max-width: 700px;
+        font-size: 1.1rem;
+        background: white;
+        padding: 25px 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
+
+      /* ====== BUTTON LINK ====== */
+      .home-link {
+        text-decoration: none;
+        color: #3498db;
+        border: 2px solid #3498db;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: all 0.3s;
+      }
+
+      .home-link:hover {
+        background: #3498db;
+        color: white;
+      }
+
+      /* ====== FOOTER ====== */
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #f1f3f4;
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      /* ====== RESPONSIVE ====== */
+      @media (max-width: 600px) {
+        main p {
+          width: 90%;
+          font-size: 1rem;
+          padding: 20px;
+        }
+      }
+    </style>
   </head>
+
   <body>
-    <p>I'm 22</p>
-    <a href="../index.html">Home</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="image.html">My Image</a>
+    </nav>
+
+    <main>
+      <p>
+        Motivated IT enthusiast with knowledge in C#, Python, and HTML. I know
+        how to work with Git, and I'm familiar with Bash. In love with the world
+        of IT and learning more every day!
+      </p>
+
+      <a href="../index.html" class="home-link">← Back to Home</a>
+    </main>
+
+    <footer>
+      <p>© 2025 Pouya Akhgari — All rights reserved.</p>
+    </footer>
   </body>
 </html>
